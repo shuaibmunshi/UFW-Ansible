@@ -1,0 +1,20 @@
+---
+open_ports:
+  - ports:
+      - 22
+    proto: 'tcp'
+    name: 'ssh'
+  - ports:
+      - 873
+    proto: 'tcp'
+    name: 'rsync'
+  - ports:
+      - 53
+    proto: 'udp'
+    name: 'dns'
+  - ports:
+      - 111
+      - 2048
+    proto: 'tcp'
+    proto: 'udp'
+    name: 'nfs'

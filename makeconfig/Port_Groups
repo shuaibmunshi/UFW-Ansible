@@ -1,0 +1,2 @@
+web_server,ssh,mysql,http,https,dns
+test_server,ssh,rsync,dns,nfs

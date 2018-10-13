@@ -1,0 +1,24 @@
+---
+#- name: Enable and configure UFW
+#- hosts: 10.0.3.117
+- hosts: all
+  remote_user: ubuntu
+  sudo: yes
+  gather_facts: no #Skips the gather facts step to save time
+
+  tasks:
+  - name: Enable UFW
+    ufw:
+     state: enabled
+
+  - name: Allow traffic from Ansible master
+    ufw:
+     rule: allow
+     src: "{{ item }}"
+    with_items:
+     - 10.0.3.0/24 #CHANGE THIS TO THE ANSIBLE MASTER's IP ADDRESS
+  - name: "Include a bunch of UFW defs"
+    include_tasks: "ufw.yml"
+    loop: "{{ open_ports }}"
+    loop_control:
+      loop_var: this_rule

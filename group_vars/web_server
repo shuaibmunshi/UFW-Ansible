@@ -1,0 +1,23 @@
+---
+open_ports:
+  - ports:
+      - 22
+    proto: 'tcp'
+    name: 'ssh'
+  - ports:
+      - 3306
+    proto: 'tcp'
+    proto: 'udp'
+    name: 'mysql'
+  - ports:
+      - 80
+    proto: 'tcp'
+    name: 'http'
+  - ports:
+      - 443
+    proto: 'tcp'
+    name: 'https'
+  - ports:
+      - 53
+    proto: 'udp'
+    name: 'dns'

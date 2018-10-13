@@ -1,0 +1,7 @@
+ssh,22,tcp
+mysql,3306,tcp,udp
+http,80,tcp
+https,443,tcp
+dns,53,udp
+rsync,873,tcp
+nfs,111,2049,tcp,udp

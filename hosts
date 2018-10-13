@@ -1,0 +1,9 @@
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[web_server] #Just an example
+10.0.0.1
+10.0.0.2
+
+[test_server]
+10.0.1.1
