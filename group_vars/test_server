@@ -15,6 +15,5 @@ open_ports:
   - ports:
       - 111
       - 2048
-    proto: 'tcp'
-    proto: 'udp'
+    proto: 'any'
     name: 'nfs'

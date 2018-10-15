@@ -6,8 +6,7 @@ open_ports:
     name: 'ssh'
   - ports:
       - 3306
-    proto: 'tcp'
-    proto: 'udp'
+    proto: 'any'
     name: 'mysql'
   - ports:
       - 80
